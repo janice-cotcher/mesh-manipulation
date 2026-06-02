@@ -1,6 +1,6 @@
 from stl import mesh
-before = "dog.stl"
-after = "decimatedMesh.stl"
+before = "durins_door.stl"
+after = "durins_door_simplified.stl"
 
 before_mesh = mesh.Mesh.from_file(before)
 after_mesh = mesh.Mesh.from_file(after)

@@ -1,6 +1,6 @@
 import meshlib.mrmeshpy as mrmeshpy
 
-file = "dog.stl"
+file = "durins_door.stl"
 # Load mesh
 mesh = mrmeshpy.loadMesh(file)
 
@@ -23,4 +23,4 @@ settings.subdivideParts = 8
 mrmeshpy.decimateMesh(mesh, settings)
 
 # Save result
-mrmeshpy.saveMesh(mesh, "decimatedMesh.stl")
+mrmeshpy.saveMesh(mesh, "durins_door_simplified.stl")
