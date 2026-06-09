@@ -1,6 +1,8 @@
+import sys
 from stl import mesh
-before = "dog_thick_ears.stl"
-after = "thick_ears_simplified.stl"
+# Capture elements passed after the script name
+before = sys.argv[1]
+after = sys.argv[2]
 
 before_mesh = mesh.Mesh.from_file(before)
 after_mesh = mesh.Mesh.from_file(after)
